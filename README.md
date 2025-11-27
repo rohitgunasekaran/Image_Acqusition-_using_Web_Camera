@@ -40,7 +40,7 @@ import cv2
 videoCaptureObject=cv2.VideoCapture(0)
 while(True):
     ret,frame=videoCaptureObject.read()
-    cv2.imwrite("abinaya.jpg",frame)
+    cv2.imwrite("bike.jpg",frame)
     result=False
 videoCaptureObject.release()
 cv2.destroyAllWindows()
@@ -79,7 +79,7 @@ while True:
     image[height//2:, :width//2]=smaller_frame
     image[:height//2, width//2:]=smaller_frame
     image[height//2:, width//2:]=smaller_frame
-    cv2.imshow('212222230002_abinaya',image)
+    cv2.imshow('_',image)
     if cv2.waitKey(1)==ord('q'):
         break
 cap.release()
